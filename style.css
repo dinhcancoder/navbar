@@ -350,6 +350,7 @@ body {
 }
 
 .mainUser {
+    position: relative;
     display: flex;
     justify-content: end;
 }
@@ -365,3 +366,12 @@ body {
     border: none;
     box-shadow: 0 0 2px #ccc;
 }
+
+/* .dropdown {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+} */
