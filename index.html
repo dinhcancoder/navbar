@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Template </title>
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="base_all.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+<body>
+    
+    <div class="nav">
+        <div class="header">
+            <div class="header__left">
+                <div class="header__left-logo">
+                    <i class="uil uil-java-script"></i>
+                </div>
+                <div class="header__left-name">
+                    <span>Front-end</span>
+                </div>
+            </div>
+            <div class="header__right">
+                <div class="header__right-icons">
+                    <i class="uil uil-angle-left-b" id="close"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="admin">
+            <div class="admin__left">
+                <div class="admin__left-logo">
+                    <img src="https://s3-ap-southeast-1.amazonaws.com/images.spiderum.com/sp-images/b0c4ce5053c611eb8898d93a52f37b5c.jpg" alt="">
+                </div>
+                <div class="admin__left-name">
+                    <a href="#">Cao Đình Can</a>
+                    <span>Thành viên vip</span>
+                </div>
+            </div>
+            <div class="admin__right">
+                <i class="uil uil-angle-down"></i>
+            </div>
+        </div>
+
+        <div class="two">
+            <div class="two__title">
+                <span>Analytics</span>
+            </div>
+            <div class="two__list">
+                <ul class="list">
+                    <li class="items"><a href="#" class="link" onclick="show(this)" id="actice">
+                        <i class="uil uil-estate"></i>
+                        <span>Trang chủ</span>
+                    </a></li>
+                    <li class="items"><a href="#" class="link" onclick="show(this)">
+                        <i class="uil uil-browser"></i>
+                        <span>Menu sản phẩm</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="two">
+            <div class="two__title">
+                <span>Application</span>
+            </div>
+            <div class="two__list">
+                <ul class="list">
+                    <li class="items"><a href="#" class="link" onclick="show(this)">
+                        <i class="uil uil-bag-alt"></i>
+                        <span>Giỏ hàng</span>
+                    </a></li>
+                    <li class="items"><a href="#" class="link" onclick="show(this)">
+                        <i class="uil uil-heart"></i>
+                        <span>Yêu thích</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="two">
+            <div class="two__title">
+                <span>Others</span>
+            </div>
+            <div class="two__list">
+                <ul class="list">
+                    <li class="items"><a href="#" class="link" onclick="show(this)">
+                        <i class="uil uil-utensils"></i>
+                        <span>Đồ ăn</span>
+                    </a></li>
+                    <li class="items"><a href="#" class="link" onclick="show(this)">
+                        <i class="uil uil-glass-martini-alt"></i>
+                        <span>Đồ uống</span>
+                    </a></li>
+                    <li class="items"><a href="#" class="link" onclick="show(this)">
+                        <i class="uil uil-apple-alt"></i>
+                        <span>Trái cây</span>
+                    </a></li>
+                    <li class="items"><a href="#" class="link" onclick="show(this)">
+                        <i class="uil uil-coins"></i>
+                        <span>Thanh toán</span>
+                    </a></li>
+                    <li class="items"><a href="#" class="link" onclick="show(this)">
+                        <i class="uil uil-credit-card"></i>
+                        <span>Chuyển khoản</span>
+                    </a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="other">
+            <ul class="list">
+                <li class="items">
+                    <a href="#" class="link" onclick="show(this)">
+                        <i class="uil uil-setting"></i>
+                        <span>Cài đặt</span>
+                    </a></li>
+                <li class="items"><a href="#" class="link" onclick="show(this)">
+                    <i class="uil uil-signout"></i>
+                    <span>Đăng xuất</span>
+                </a></li>
+            </ul>
+
+            <div id="footer">
+                <div id="choose" onclick="choose()"></div>
+                <span>Sáng / Tối</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <div class="main__header">
+            <div class="container">
+                <div class="main__header-box">
+                    <div class="header__box-search">
+                        <input type="text" placeholder="Nhập nội dung ...">
+                        <i class="uil uil-search"></i>
+                    </div>
+                    <div class="search_none">
+                        <div class="search">
+                            <div class="search__mobile">
+                                <i class="uil uil-search"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__right">
+                        <div class="header__box-right">
+                            <div class="box-right__create">
+                                <span>+ Create</span>
+                            </div>
+                            <div class="box-right__Notification">
+                                <i class="uil uil-comment-alt-notes"></i>
+                            </div>
+                            <div class="box-right__Notification">
+                                <i class="uil uil-snapchat-alt"></i>
+                            </div>
+                            <div class="box-right__user">
+                                <div class="box-right__user-box">
+                                    <img src="https://s3-ap-southeast-1.amazonaws.com/images.spiderum.com/sp-images/b0c4ce5053c611eb8898d93a52f37b5c.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="main__user">
+                        <div class="mainUser">
+                            <div class="mainUser__img">
+                                <img src="https://s3-ap-southeast-1.amazonaws.com/images.spiderum.com/sp-images/b0c4ce5053c611eb8898d93a52f37b5c.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./index.js">
+
+    </script>
+
+</body>
+</html>
